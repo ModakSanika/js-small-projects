@@ -2,7 +2,7 @@
 
 # Solution Code
 
-## project 2: Digital Clock
+## project 3: Digital Clock
 
 
 ```javascript
