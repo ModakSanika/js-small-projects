@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    padding: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+#game {
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vmin;
+    border: 3px solid black;
+    position: relative;
+}
+
+#character {
+    /* width: 20px;
+    height: 50px;
+    background-color: red; */
+    position: absolute;
+    bottom: -8px;
+    left: 10px;
+}
+#character img{
+    width: 60px;
+    height: 50px;
+}
+
+.animate {
+    animation: jump 500ms ease-out;
+}
+
+@keyframes jump {
+    0% { bottom: 0; }
+    50% { bottom: 100px; }
+    100% { bottom: 0; }
+}
+
+#block {
+    width: 20px;
+    height: 20px;
+    background-color: rgb(40, 251, 40);
+    position: absolute;
+    bottom: 0;
+    left: 96vmin;
+    animation: block 3s infinite linear;
+}
+#block1{
+    width: 20px;
+    height: 30px;
+    background-color: rgb(46, 105, 46);
+    position: absolute;
+    bottom: 0;
+    left: 90vmin;
+    animation: block1 3s infinite linear;
+}
+/* .sckate{
+    animation: cloud 2s infinite linear;
+    width: 70px;
+    position: relative;
+    left: 96vmin;
+    bottom: cm;
+    border-bottom: 2px solid black;
+
+} */
+.background{
+    animation: cloud 2s infinite linear;
+    width: 70px;
+    position: relative;
+    left: 96vmin;
+}
+
+@keyframes block {
+    0% { left: 80vmin }
+    100% {  left: 10px; }
+}
+@keyframes block1 {
+    0% { left: 97vmin }
+    100% {  left: 10px; }
+}
+@keyframes cloud {
+    0% { left: 40vmin }
+    100% {  left:-45vmin; }
+}
